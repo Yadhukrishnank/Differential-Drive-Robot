@@ -1,0 +1,22 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/yadhu/differential-drive/build/pyfile",
+        "/home/yadhu/Differential-Drive-Robot/install/pyfile/lib/python3.10/site-packages",
+        "/home/yadhu/differential-drive/src/install/pyfile/lib/python3.10/site-packages",
+        "/home/yadhu/l3/install/action_py/lib/python3.10/site-packages",
+        "/home/yadhu/l3/install/my_robot_interfaces/local/lib/python3.10/dist-packages",
+        "/home/yadhu/l3/install/lifecycle_py/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/yadhu/differential-drive/build/pyfile",
+        "/home/yadhu/Differential-Drive-Robot/install/pyfile/lib/python3.10/site-packages",
+        "/home/yadhu/differential-drive/src/install/pyfile/lib/python3.10/site-packages",
+        "/home/yadhu/l3/install/action_py/lib/python3.10/site-packages",
+        "/home/yadhu/l3/install/my_robot_interfaces/local/lib/python3.10/dist-packages",
+        "/home/yadhu/l3/install/lifecycle_py/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

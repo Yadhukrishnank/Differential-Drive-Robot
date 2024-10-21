@@ -1,0 +1,7 @@
+int64 x # m
+int64 y # m/s
+---
+int64 position
+string message
+---
+int64 current_position
