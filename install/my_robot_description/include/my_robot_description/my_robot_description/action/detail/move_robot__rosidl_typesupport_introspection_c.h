@@ -1,1 +1,0 @@
-/home/yadhu/differential-drive/build/my_robot_description/rosidl_typesupport_introspection_c/my_robot_description/action/detail/move_robot__rosidl_typesupport_introspection_c.h

@@ -10,6 +10,7 @@ from rclpy.executors import MultiThreadedExecutor
 from rclpy.callback_groups import ReentrantCallbackGroup
 from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
+from pyfile.go_straight import main as straight
 
 class MoveRoboServerNode(Node):
     def __init__(self):
@@ -111,12 +112,14 @@ class MoveRoboServerNode(Node):
                 self.cmd_vel_publisher_.publish(cmd)
                 goal_handle.canceled()
                 result.message = "Goal was canceled"
+                straight()
                 return result
+            
 
             # Provide feedback to the client
             feedback.current_position = current_x
             goal_handle.publish_feedback(feedback)
-
+            
             time.sleep(1.0)  # Simulate a delay in processing
 
         # If something goes wrong, return the result with an error message
