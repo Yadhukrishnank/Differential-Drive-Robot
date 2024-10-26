@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<!-- <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <xacro:property name="arm_base_length" value="0.1" />
@@ -81,4 +81,4 @@
         <dynamics friction="0.05" damping="0.1" />
     </joint>
 
-</robot>
+</robot> -->
