@@ -16,7 +16,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 )
 
 install(
-  DIRECTORY urdf launch rviz action
+  DIRECTORY urdf launch rviz action config
   DESTINATION share/${PROJECT_NAME}/
 )
 

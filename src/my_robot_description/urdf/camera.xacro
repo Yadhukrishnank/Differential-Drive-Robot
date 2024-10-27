@@ -49,10 +49,10 @@
                 <frame_name>camera_link_optical</frame_name>
             </plugin>
         </sensor>
-    </gazebo>
-
+    </gazebo>    
+    
     <link name="laser_frame">
-        <visual>
+        <visual>    
             <geometry>
                 <cylinder radius="${wheel_radius}" length="${wheel_length}" /> <!-- Adjust size based on your sensor -->
             </geometry>

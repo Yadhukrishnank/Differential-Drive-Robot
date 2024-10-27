@@ -5,13 +5,16 @@
 
     <let name="rviz_config_path" value = "$(find-pkg-share my_robot_bringup)/rviz/urdf_config.rviz"/>
 
-
+     <let name="twist_mux_params_path" 
+          value="$(find-pkg-share my_robot_description)/config/twist_mux.yaml"/>
 
     <node pkg="robot_state_publisher" exec="robot_state_publisher">
             <param name="robot_description"     
                     value="$(command 'xacro $(var urdf_path)')"/> 
     </node>
+
     <!-- <gazebo file calling> -->
+
     <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py">
     <arg name="world" value="$(find-pkg-share my_robot_bringup)/worlds/test_world.world"/>
     </include> 
@@ -22,5 +25,12 @@
             args="-topic robot_description -entity my_robot"/>
 
     <node pkg="rviz2" exec="rviz2" output="screen" args = "-d $(var rviz_config_path)"/>
-    
+
+     <node pkg="twist_mux" exec="twist_mux">
+        <param from="$(var twist_mux_params_path)"/>
+        <param name="use_sim_time" value="true"/>
+        <remap from="/cmd_vel_out" to="/diff_cont/cmd_vel_unstamped"/>
+    </node>
+
+
 </launch>
