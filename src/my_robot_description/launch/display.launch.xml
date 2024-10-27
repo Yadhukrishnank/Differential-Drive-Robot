@@ -9,6 +9,10 @@
                 value="$(command 'xacro $(var urdf_path)')"/>
     </node>
 
+
+    <!-- <launch>
+    <include file="$(find-package-share my_robot_bringup)/launch/joystick.launch.py"/>
+    </launch> -->
     
     <node pkg="joint_state_publisher_gui" exec="joint_state_publisher_gui"/>
 
