@@ -1,1 +1,8 @@
-/home/yadhu/Differential-Drive-Robot/src/my_robot_description/action/MoveRobo.action
+float32 x # m
+float32 z # m/s
+---
+float32 x
+float32 z
+string message
+---
+float32 current_position

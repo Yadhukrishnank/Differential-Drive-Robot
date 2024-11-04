@@ -1,1 +1,28 @@
-/home/yadhu/Differential-Drive-Robot/build/my_robot_description/rosidl_adapter/my_robot_description/action/MoveRobo.idl
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from my_robot_description/action/MoveRobo.action
+// generated code does not contain a copyright notice
+
+
+module my_robot_description {
+  module action {
+    struct MoveRobo_Goal {
+      @verbatim (language="comment", text=
+        "m")
+      float x;
+
+      @verbatim (language="comment", text=
+        "m/s")
+      float z;
+    };
+    struct MoveRobo_Result {
+      float x;
+
+      float z;
+
+      string message;
+    };
+    struct MoveRobo_Feedback {
+      float current_position;
+    };
+  };
+};

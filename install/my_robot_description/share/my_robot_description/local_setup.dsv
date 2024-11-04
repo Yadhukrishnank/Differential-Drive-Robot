@@ -1,1 +1,4 @@
-/home/yadhu/Differential-Drive-Robot/build/my_robot_description/ament_cmake_environment_hooks/local_setup.dsv
+source;share/my_robot_description/environment/ament_prefix_path.sh
+source;share/my_robot_description/environment/library_path.sh
+source;share/my_robot_description/environment/path.sh
+source;share/my_robot_description/environment/pythonpath.sh
